@@ -3,177 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Icons Gallery</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 40px 20px;
-        }
-        
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        
-        h1 {
-            text-align: center;
-            color: white;
-            font-size: 3rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        .subtitle {
-            text-align: center;
-            color: rgba(255,255,255,0.9);
-            font-size: 1.2rem;
-            margin-bottom: 50px;
-        }
-        
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 30px;
-            padding: 20px;
-        }
-        
-        .icon-card {
-            background: white;
-            border-radius: 15px;
-            padding: 25px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .icon-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-        }
-        
-        .icon-image {
-            width: 100%;
-            height: 200px;
-            object-fit: contain;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-        
-        .icon-name {
-            color: #333;
-            font-size: 1.1rem;
-            font-weight: 600;
-            text-align: center;
-            word-wrap: break-word;
-            width: 100%;
-        }
-        
-        .icon-size {
-            color: #666;
-            font-size: 0.9rem;
-            margin-top: 8px;
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            
-            .gallery {
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-                gap: 20px;
-            }
-        }
-    </style>
+    <title>Icon Gallery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>🎨 Work Icons Gallery</h1>
-        <p class="subtitle">A collection of work-related icons and images</p>
-        
-        <div class="gallery">
-            <div class="icon-card">
-                <img src="Lenovobot4.png" alt="Lenovobot4" class="icon-image">
-                <div class="icon-name">Lenovobot4</div>
-                <div class="icon-size">285 KB</div>
-            </div>
-            
-            <div class="icon-card">
-                <img src="Lenovocasebot3.png" alt="Lenovocasebot3" class="icon-image">
-                <div class="icon-name">Lenovocasebot3</div>
-                <div class="icon-size">272 KB</div>
-            </div>
-            
-            <div class="icon-card">
-                <img src="envc.png" alt="Environment Config" class="icon-image">
-                <div class="icon-name">Environment Config</div>
-                <div class="icon-size">1.2 MB</div>
-            </div>
-            
-            <div class="icon-card">
-                <img src="ldap-alart.png" alt="LDAP Alert" class="icon-image">
-                <div class="icon-name">LDAP Alert</div>
-                <div class="icon-size">1.4 MB</div>
-            </div>
-            
-            <div class="icon-card">
-                <img src="ldap.jpeg" alt="LDAP" class="icon-image">
-                <div class="icon-name">LDAP</div>
-                <div class="icon-size">463 KB</div>
-            </div>
-            
-            <div class="icon-card">
-                <img src="ldap_1.jpeg" alt="LDAP 1" class="icon-image">
-                <div class="icon-name">LDAP 1</div>
-                <div class="icon-size">555 KB</div>
-            </div>
-            
-            <div class="icon-card">
-                <img src="ldap_good.jpeg" alt="LDAP Good" class="icon-image">
-                <div class="icon-name">LDAP Good</div>
-                <div class="icon-size">536 KB</div>
-            </div>
-            
-            <div class="icon-card">
-                <img src="lennvocase.png" alt="Lenovo Case" class="icon-image">
-                <div class="icon-name">Lenovo Case</div>
-                <div class="icon-size">8 KB</div>
-            </div>
-            
-            <div class="icon-card">
-                <img src="lenovocasebot-b.png" alt="Lenovocasebot B" class="icon-image">
-                <div class="icon-name">Lenovocasebot B</div>
-                <div class="icon-size">1.5 MB</div>
-            </div>
-            
-            <div class="icon-card">
-                <img src="lenovocasebot1 (Small).png" alt="Lenovocasebot1 Small" class="icon-image">
-                <div class="icon-name">Lenovocasebot1 (Small)</div>
-                <div class="icon-size">298 KB</div>
-            </div>
-            
-            <div class="icon-card">
-                <img src="pve.png" alt="PVE" class="icon-image">
-                <div class="icon-name">PVE</div>
-                <div class="icon-size">53 KB</div>
-            </div>
-            
-            <div class="icon-card">
-                <img src="pvr-alert.png" alt="PVR Alert" class="icon-image">
-                <div class="icon-name">PVR Alert</div>
-                <div class="icon-size">19 KB</div>
-            </div>
-        </div>
+    <h1>Icon Gallery</h1>
+    <div class="gallery">
+        <img src="icon1.png" alt="Icon 1">
+        <img src="icon2.png" alt="Icon 2">
+        <img src="icon3.png" alt="Icon 3">
+        <img src="icon4.png" alt="Icon 4">
+        <img src="env-prb-s.png" alt="Env PRB S">
+        <img src="envprb2-s.png" alt="Env PRB2 S">
     </div>
 </body>
 </html>
